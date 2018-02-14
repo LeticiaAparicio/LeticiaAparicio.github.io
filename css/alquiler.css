@@ -1,0 +1,281 @@
+/*Estilos generales*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,400i,700');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #666666;
+    font-size: 20px;
+    background-color: rgb(228, 224, 224);
+}
+
+a {
+    text-decoration: none;
+    color: #375750;
+}
+
+a:hover {
+    color: #375750;
+    font-weight: bold;
+}
+
+h3 {
+    color: #375750;
+}
+
+p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.logo {
+    font-size: 80px;
+}
+
+/*Barra de navegación*/
+
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    /* box-shadow: 0px 4px 4px grey; */
+    background-color: rgba(255, 255, 255, 0.836);
+    box-shadow: 0px 4px 4px #218A72;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    padding: 0 15px;
+    font-size: 20px;
+}
+
+.burger {
+    font-size: 34px;
+    display: none;
+}
+
+.activo {
+    color: #375750;
+    font-weight: bold;
+}
+
+/*Breadcrumbs*/
+
+.primera {
+    margin-top: 120px;
+    padding: 20px;
+}
+
+/*Cardpics*/
+
+.titulo {
+    width: 100%;
+    text-align: left;
+    margin: 25px;
+    padding: 10px;
+
+}
+
+.titulo h3 {
+    color: #8A3113;
+}
+
+.contenedor {
+    display: flex;  
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+
+.card {
+    margin: 40px 20px;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    box-shadow: 2px 2px 2px grey,
+                -2px 2px 2px grey,
+                2px -2px 2px grey,
+                2px 2px 2px grey;
+    border-radius: 5px;
+    position: relative;
+}
+
+.card .texto {
+    width: 280px;
+    height: 50px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding-top: 10px; /*lo separa del borde arriba*/
+}
+
+
+/*Footer*/
+
+footer {
+    background-color: #218A72;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+footer p {
+    font-size: 18px;
+    padding: 5px;
+}
+
+.top {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: -20px;
+    left: 50%; /*es lo que lo pone en la mitad de la página*/
+    transform: translateX(-50%); /*La mitad del ancho del elemento*/
+    font-size: 36px;
+    background-color: #218A72;
+    color: whitesmoke;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top a {
+    color:  white;
+}
+
+.izquierdo {
+    /* border: #d2fff5 solid 1px; */
+    padding: 20px;
+    flex-basis: 200px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+.centro {
+    /* border: #d2fff5 solid 1px; */
+    padding: 20px;
+    flex-basis: 100px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.centro p {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.centro a {
+    color: white;
+    font-size: 18px;
+}
+
+.derecho {
+    /* border: #d2fff5 solid 1px; */
+    flex-basis: 100px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.derecho p {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.derecho a{
+    color: white;
+}
+
+.rrss a{
+    color: white;
+    font-size: 30px;
+    padding: 5px;
+}
+
+.rrss a:hover {
+    font-size: 38px;
+}
+
+.copy {
+    padding: 5px;
+    width: 100%;
+    background-color: white;
+    color: #375750;
+}
+
+.copy p{
+    font-size: 14px;
+    text-align: center;
+}
+
+
+
+/*Media queries*/
+
+
+@media (max-width:640px){
+
+    .burger{
+        display: initial;
+    }
+
+    nav {
+        display: none;
+    }
+    
+}
+
+@media (max-width: 420px){
+
+    .titulo h3 {
+        font-size: 20px;
+    }
+
+    .card .texto {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 340px){
+
+    .titulo h3 {
+        font-size: 18px;
+    }
+
+    .card .texto {
+        font-size: 18px;
+    }
+}
