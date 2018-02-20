@@ -94,6 +94,86 @@ header .activo {
     font-weight: bold;
 }
 
+/*Menu hamburguesa*/
+
+
+.burger2 {
+    display: none;
+}
+
+.burger2 .barra{
+    height: 4px;
+    width: 30px;
+    margin: 8px auto;
+    background-color: #8A3113;
+}
+
+.arriba, .media, .abajo {
+    transition: all 700ms ease;
+}
+
+.burger2.abierto .arriba {
+    transform: translateY(12px) rotateZ(45deg);
+}
+
+.burger2.abierto .media {
+    width: 0;
+}
+
+.burger2.abierto .abajo {
+    transform: translateY(-12px) rotateZ(-45deg);
+}
+
+.menu2 {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 80%;
+    height: calc(100vh - 105px);
+    background-color: rgb(255, 218, 206);
+    z-index: 10;
+    display: none;
+    margin-top: 5px;
+}
+
+.menu2 ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu2 ul a{
+    width: 100%;
+    padding: 10px 20px;
+    transform: translateX(-200px);
+    color: #3f3f3f;
+    font-size: 20px;
+}
+
+.menu2 ul a.activo{
+    color: #8A3113;
+}
+
+.menu2 ul a:nth-child(1) {
+    transition: transform 500ms ease-in-out;
+}
+
+.menu2 ul a:nth-child(2) {
+    transition: transform 700ms ease-in-out;
+}
+
+.menu2 ul a:nth-child(3) {
+    transition: transform 900ms ease-in-out;
+}
+
+.menu2 ul a:nth-child(4) {
+    transition: transform 1100ms ease-in-out;
+}
+
+.menu2 ul a.aparicion {
+    transform: translateX(0px);
+}
+
+
 /*Breadcrumbs*/
 
 .primera {
@@ -133,6 +213,8 @@ header .activo {
     width: 600px;
 }
 
+
+
 .col2 {
     /* border: 1px solid black; */
     flex-basis: 300px;
@@ -169,6 +251,63 @@ header .activo {
     text-align: center;
 }
 
+/*Ventana modal con mapa*/
+
+.boton {
+    margin: 20px;
+    color: white;
+    font-size: 22px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #8A3113;
+}
+
+.boton:hover {
+    background-color: #D66D49;
+    color: black;
+    font-weight: inherit;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.52);
+    opacity: 0;
+    z-index: -1;
+}
+
+.overlay.visible {
+    opacity: 1;
+    z-index: 9;
+}
+
+.modal {
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 900px;
+    box-shadow: 4px 4px 4px #3f3f3f7c;
+    background-color: #ededed;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 10;
+    transition: all 500ms ease;
+}
+
+.modal.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.columna {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 /*FORMULARIO DE CONTACTO*/
 .contenedor {
@@ -466,7 +605,7 @@ footer p {
         align-items: center;
     }
 
-    .burger{
+    .burger, .burger2{
         display: initial;
     }
 

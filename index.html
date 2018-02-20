@@ -7,11 +7,22 @@
     <title>Inmobiliaria Costa del Sol | Inicio</title>
     <link rel="stylesheet" href="./css/estilos.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    
+    <!-- Importamos JQuery y archivo JavaScript -->
+    <script src="./js/librerias/jquery-3.3.1.js"></script>
+    <script src="./js/main.js"></script>
 </head>
-<body>
-    <header>
+<body id="top">
+    <header class="blanco">
         <p class="burger">&#9776;</p>
+        <div class="menu">
+            <p class="cerrar">&#x2715;</p>
+            <ul>
+                <a href="index.html" class="activo">Inicio</a>
+                <a href="comprar.html" target="_blank">Comprar</a>
+                <a href="alquiler.html" target="_blank">Alquiler</a>
+                <a href="contacto.html" target="_blank">Contacto</a>
+            </ul>
+        </div>
         <a href="index.html" class="logo">
             <img src="./img/LOGO.svg" alt="Logo">
         </a>
@@ -94,11 +105,9 @@
 
     <!-- FOOTER -->
     <footer>
-        <div class="top">
-            <a href="#">
-                <i class="fas fa-chevron-circle-up"></i>
-            </a>
-        </div>
+        <a href="#top" class="top">
+            <i class="fas fa-chevron-circle-up"></i>
+        </a>
         <div class="izquierdo">
             <p>Inmobiliaria Costa del Sol BUILDING</p>
             <p>Avenida de la Vera, 24 <i class="fas fa-map-marker-alt"></i></p>

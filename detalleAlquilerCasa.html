@@ -7,10 +7,27 @@
     <title>Detalle de alquiler de casas</title>
     <link rel="stylesheet" href="./css/detalle.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <!-- Importamos JQuery y archivo JavaScript -->
+    <script src="./js/librerias/jquery-3.3.1.js"></script>
+    <script src="./js/main.js"></script>
 </head>
 <body>
     <header>
-        <p class="burger">&#9776;</p>
+        <!-- botón menú hamburguesa -->
+    <div class="burger2">
+            <div class="barra arriba"></div>
+            <div class="barra media"></div>
+            <div class="barra abajo"></div>
+        </div>
+        <!-- menú hamburguesa -->
+        <div class="menu2">
+            <ul>
+                <a href="index.html">Inicio</a>
+                <a href="comprar.html">Comprar</a>
+                <a href="alquiler.html" class="activo">Alquiler</a>
+                <a href="contacto.html">Contacto</a>
+            </ul>
+        </div> 
         <a href="index.html" class="logo">
             <img src="./img/LOGOBLANCO.svg" alt="Logo">
         </a>
@@ -22,7 +39,8 @@
                 <li><a href="contacto.html" target="_blank">Contacto</a></li>
             </ul>
         </nav>  
-    </header>  
+    </header> 
+    
     <div class="breadcrumbs primera">
         <a href="index.html">Inicio</a> 
         <span> <i class="fas fa-angle-right"></i> </span>
@@ -35,9 +53,16 @@
     <!-- DETALLE ALQUILER CASA -->
     <h3 class="titulo">VILLA ELEGANTE EN GOLF VALLEY</h3>
     <div class="fila">
-        <div class="col1">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12829.794458945777!2d-4.963083483535522!3d36.49503154068398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd7329f95778141f%3A0x89f7238dbe6dc699!2sNueva+Andaluc%C3%ADa%2C+29660+Marbella%2C+M%C3%A1laga!5e0!3m2!1ses!2ses!4v1518511320927" width="500" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>        </div>
-        <div class="col2">
+        <div class="col1 columna">
+            <div class="overlay"></div>
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12829.794458945777!2d-4.963083483535522!3d36.49503154068398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd7329f95778141f%3A0x89f7238dbe6dc699!2sNueva+Andaluc%C3%ADa%2C+29660+Marbella%2C+M%C3%A1laga!5e0!3m2!1ses!2ses!4v1518511320927" width="500" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>        </div>
+                <button class="boton" id="open">Ver mapa</button>        
+            </div>
+            <div class="modal">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d25657.931368941016!2d-4.971624000000001!3d36.500034!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd7329f95778141f%3A0x89f7238dbe6dc699!2sNueva+Andaluc%C3%ADa%2C+29660+Marbella%2C+M%C3%A1laga!5e0!3m2!1ses!2ses!4v1519130289728" width="900" height="700" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <div class="col2">
             <p>CARACTERÍSTICAS DEL INMUEBLE</p>
             <p>Alquiler: 9.000€</p> 
             <p>Dormitorios: 6 | Baños: 5 | 2 plantas </p> 
