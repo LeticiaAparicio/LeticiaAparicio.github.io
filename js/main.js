@@ -12,16 +12,6 @@ $(document).ready(function(){
         $(".menu2").animate({width:"toggle"},500);
         $(".menu2 a").toggleClass("aparicion");
     });
-    //Cambio de estilo según scroll
-    $(window).on("scroll", function(){
-        var posicion = $("#primera").offset();
-
-        if ( $(window).scrollTop() > posicion.top - 50 ) {
-            $("header").removeClass("blanco");
-        } else {
-            $("header").addClass("blanco");
-        }
-    });
     //Scroll suave
     $("a").on("click", function(){
         if (this.hash !== "") {
