@@ -198,6 +198,7 @@ header .activo {
     margin: 40px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     /* border: 1px solid green; */
 }
 
@@ -405,6 +406,30 @@ label {
     padding: 10px;
 }
 
+/*Hacer imágenes en grande*/
+
+.modal1, .modal2, .modal3, .modal4, .modal5, .modal6 {
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    box-shadow: 4px 4px 4px #3f3f3f7c;
+    background-color: #ededed;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 10;
+    transition: all 500ms ease;
+}
+
+.infoimagen {
+    text-align: center;
+}
+
+.modal1.visible, .modal2.visible, .modal3.visible, .modal4.visible, .modal5.visible, .modal6.visible {
+    opacity: 1;
+    visibility: visible;
+}
 
 
 /*Menú de paginación*/
@@ -640,7 +665,6 @@ footer p {
         font-size: 22px;
     }
 
-
     #boton {
         width: 50%;
         font-size: 14px;
@@ -648,6 +672,12 @@ footer p {
 
     .contenedor {
         width: 75%;
+    }
+
+    .boton {
+        margin: 20px;
+        font-size: 18px;
+        padding: 10px;
     }
 }
 
@@ -716,6 +746,11 @@ footer p {
 
     .fila label {
         font-size: 18px;
+    }
+    .boton {
+        margin: 20px;
+        font-size: 14px;
+        padding: 10px;
     }
 }
 

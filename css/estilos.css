@@ -281,6 +281,27 @@ header nav ul li {
     color: white;
 }
 
+/*Ventana modal para mapa*/
+
+.modal {
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    box-shadow: 4px 4px 4px #3f3f3f7c;
+    background-color: #ededed;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 10;
+    transition: all 500ms ease;
+}
+
+
+.modal.visible {
+    opacity: 1;
+    visibility: visible;
+}
 
 /*Secciones de información*/
 

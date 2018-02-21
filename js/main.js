@@ -29,4 +29,47 @@ $(document).ready(function(){
     $("#close, .overlay").click(function(){
         $(".modal, .overlay").removeClass("visible");
     });
+
+    //Ventana modal imagen 1
+    $("#open1").click(function(){
+        $(".modal1, .overlay").addClass("visible");
+    });
+    $("#close1, .overlay").click(function(){
+        $(".modal1, .overlay").removeClass("visible");
+    });
+    //Ventana modal imagen 2
+    $("#open2").click(function(){
+        $(".modal2, .overlay").addClass("visible");
+    });
+    $("#close2, .overlay").click(function(){
+        $(".modal2, .overlay").removeClass("visible");
+    });
+    //Ventana modal imagen 3
+    $("#open3").click(function(){
+        $(".modal3, .overlay").addClass("visible");
+    });
+    $("#close3, .overlay").click(function(){
+        $(".modal3, .overlay").removeClass("visible");
+    });
+    //Ventana modal imagen 4
+    $("#open4").click(function(){
+        $(".modal4, .overlay").addClass("visible");
+    });
+    $("#close4, .overlay").click(function(){
+        $(".modal4, .overlay").removeClass("visible");
+    });
+    //Ventana modal imagen 5
+    $("#open5").click(function(){
+        $(".modal5, .overlay").addClass("visible");
+    });
+    $("#close5, .overlay").click(function(){
+        $(".modal5, .overlay").removeClass("visible");
+    });
+    //Ventana modal imagen 6
+    $("#open6").click(function(){
+        $(".modal6, .overlay").addClass("visible");
+    });
+    $("#close6, .overlay").click(function(){
+        $(".modal6, .overlay").removeClass("visible");
+    });
 });
